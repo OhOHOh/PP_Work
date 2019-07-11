@@ -1,0 +1,4 @@
+HOME_URL 下：
+
+一页当中的所有 items，都在 <div id="AIRLINE_INDEX"> 其中。
+在HOME_URL页面中，需要跳转，看看url有什么规律：url不变？！什么鬼
