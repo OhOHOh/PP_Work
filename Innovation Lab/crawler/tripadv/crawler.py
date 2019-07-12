@@ -2,7 +2,9 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 from urllib.error import HTTPError
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 
+import time
 from config import *
 
 def get_first_home_page(url):
@@ -34,25 +36,30 @@ def parse_first_home_page(html_txt):
         item_dict['link'] = 'https://www.tripadvisor.com' + item_dict['link']
         
         items_list_after.append(item_dict)
-
+    
+    # # only for test, for goto_next_home_page()
+    # button = bsObj.find("span", attrs={"class": "nav next taLnk ui_button primary"})
+    # print(button)
     return items_list_after
 
-def update_home_page(url):
+def goto_next_home_page(url):
     '''
     进行翻页功能, 能够爬取到 home page 中所有的页面
     '''
     print("start")
     # browser = webdriver.Chrome(executable_path=r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe')
     # browser = webdriver.PhantomJS(executable_path=r'C:\Users\runyu\Downloads\phantomjs-2.1.1-windows\bin\phantomjs.exe')
-    browser = webdriver.Chrome(executable_path='/Users/runshen/chromedriver') #Mac self
+    # browser = webdriver.Chrome(executable_path='/Users/runshen/chromedriver') #Mac self
+    browser = webdriver.Chrome(executable_path=r'C:\Users\runyu\Downloads\chromedriver.exe')
     browser.get('https://www.tripadvisor.com/Airlines')
-    # button = browser.find_element_by_class_name("nav next taLnk ui_button primary")
-    button = browser.find_element_by_link_text('Next')
+    print(browser.page_source)
+    # button = browser.find_element_by_class_name("nav next taLnk ui_button primary").click()  #why?
+    # button = browser.find_element_by_link_text('Next')
+    button = browser.find_element(By.CLASS_NAME, r"nav next taLnk ui_button primary")
     print(button)
-    # print(browser.page_source)
+    # print(browser.page_source) #success
     # browser.close()
-    # print("end")
-
+    print("end")
 
 def get_parse_datail_page(url):
     '''
@@ -74,5 +81,5 @@ if __name__ == '__main__':
     # home_page_items_list = parse_first_home_page(html_txt)  # first page
     # print(home_page_items_list) # ok
 
-    update_home_page(HOME_URL_BEGIN)
+    goto_next_home_page(HOME_URL_BEGIN)
 
