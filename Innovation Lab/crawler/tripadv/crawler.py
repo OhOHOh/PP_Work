@@ -7,6 +7,8 @@ from selenium.webdriver.common.by import By
 import time
 from config import *
 
+# https://www.tripadvisor.com/MetaPlacementAjax?placementName=airlines_lander_main&wrap=true&skipLocation=true&page=0
+
 def get_first_home_page(url):
     '''
     获取一页, return html code
@@ -49,13 +51,14 @@ def goto_next_home_page(url):
     print("start")
     # browser = webdriver.Chrome(executable_path=r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe')
     # browser = webdriver.PhantomJS(executable_path=r'C:\Users\runyu\Downloads\phantomjs-2.1.1-windows\bin\phantomjs.exe')
-    # browser = webdriver.Chrome(executable_path='/Users/runshen/chromedriver') #Mac self
-    browser = webdriver.Chrome(executable_path=r'C:\Users\runyu\Downloads\chromedriver.exe')
+    browser = webdriver.Chrome(executable_path='/Users/runshen/chromedriver') #Mac self
+    # browser = webdriver.Chrome(executable_path=r'C:\Users\runyu\Downloads\chromedriver.exe') #win10
     browser.get('https://www.tripadvisor.com/Airlines')
+    time.sleep(5)
     print(browser.page_source)
-    # button = browser.find_element_by_class_name("nav next taLnk ui_button primary").click()  #why?
+    button = browser.find_element_by_class_name("nav next taLnk ui_button primary").click()  #why?
     # button = browser.find_element_by_link_text('Next')
-    button = browser.find_element(By.CLASS_NAME, r"nav next taLnk ui_button primary")
+    # button = browser.find_element(By.CLASS_NAME, r"nav next taLnk ui_button primary")
     print(button)
     # print(browser.page_source) #success
     # browser.close()
@@ -77,9 +80,9 @@ def get_parse_datail_page(url):
 
 if __name__ == '__main__':
     # HOME_URL_BEGIN = 'https://www.tripadvisor.com/Airlines'
-    # html_txt = get_first_home_page('https://www.tripadvisor.com/Airlines')
-    # home_page_items_list = parse_first_home_page(html_txt)  # first page
-    # print(home_page_items_list) # ok
+    html_txt = get_first_home_page('https://www.tripadvisor.com/Airlines')
+    home_page_items_list = parse_first_home_page(html_txt)  # first page
+    print(home_page_items_list) # ok
 
-    goto_next_home_page(HOME_URL_BEGIN)
+    # goto_next_home_page(HOME_URL_BEGIN)
 
