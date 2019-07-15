@@ -56,11 +56,28 @@ def parse_detail_page(html):
         # title
         tmp_title = review_item.find("div", attrs={"class": "location-review-review-list-parts-ReviewTitle__reviewTitle--2GO9Z"})
         reviews_dict['title'] = tmp_title.a.span.span.string
-        # print(reviews_dict['title'])
         # content
         tmp_content = review_item.find("div", attrs={"class": "common-text-ReadMore__content--2X4LR"})
         reviews_dict['content'] = tmp_content.get_text()
-        # print(reviews_dict['content'])
+        # category, start, end, region
+        tmp = review_item.find("div", attrs={"class": "location-review-review-list-parts-RatingLine__labelsContainer--rSajH"})
+        tmp_list = tmp.contents
+        reviews_dict['category'] = tmp_list[-1].get_text()
+        reviews_dict['start'] = tmp_list[0].get_text().split(" - ")[0]
+        reviews_dict['end'] = tmp_list[0].get_text().split(" - ")[1]
+        reviews_dict['region'] = tmp_list[1].get_text()
+        # date of travel
+        try:
+            reviews_dict['DOV'] = review_item.find("div", attrs={"class": "location-review-review-list-parts-EventDate__event_date--1epHa"}).get_text()[16:]
+        except AttributeError as e:
+            reviews_dict['DOV'] = None
+        # date of write
+        reviews_dict['DOW'] = review_item.find("div", attrs={"class": "social-member-event-MemberEventOnObjectBlock__event_type--3njyv"}).get_text().split("wrote a review ")[-1]
+
+        # score: total score + other 8 scores
+        # total score
+        tmp_total_score = review_item.find("div", attrs={"class": "location-review-review-list-parts-RatingLine__bubbles--GcJvM"})
+
         reviews_list.append(reviews_dict)
     
     return reviews_list
