@@ -74,21 +74,21 @@ if __name__ == '__main__':
     # print(len(rtn))
 
 #   下面是完成可执行代码, 能够爬取所有 HOME_PAGE 上的所有航空公司的信息
-    # page_index = 0
-    # Airlines = []
-    # while (True):
-    #     HOME_URL = 'https://www.tripadvisor.com/MetaPlacementAjax?placementName=airlines_lander_main&skipLocation=true' + "&page=" + str(page_index)
-    #     html_txt = get_page_html_txt(HOME_URL)
-    #     airlines_per_page = parse_home_page(html_txt)
-    #     print("{} -parse finished!".format(HOME_URL))
-    #     Airlines.append(airlines_per_page)
-    #     if len(airlines_per_page) < 10:
-    #         print("{} -does not have 10 arilines!".format(HOME_URL))
-    #         break
-    #     page_index = page_index + 1
-    #     time.sleep(2)
+    page_index = 0
+    Airlines = []
+    while (True):
+        HOME_URL = 'https://www.tripadvisor.com/MetaPlacementAjax?placementName=airlines_lander_main&skipLocation=true' + "&page=" + str(page_index)
+        html_txt = get_page_html_txt(HOME_URL)
+        airlines_per_page = parse_home_page(html_txt)
+        print("{} -parse finished!".format(HOME_URL))
+        Airlines.append(airlines_per_page)
+        if len(airlines_per_page) < 10:
+            print("{} -does not have 10 arilines!".format(HOME_URL))
+            break
+        page_index = page_index + 1
+        time.sleep(2)
 
-    # print(Airlines)
+    print(Airlines)
     
 #   下面开始测试爬取 DETAIL_PAGE 的信息!
     # page_index = 0
@@ -101,9 +101,10 @@ if __name__ == '__main__':
     #     page_index = page_index + 1
     # for item in Airlines:
     #     print(item)
-    detail_page_url = 'https://www.tripadvisor.com/Airline_Review-d8728984-Reviews-Adria-Airways#REVIEWS'
-    html_txt = get_page_html_txt(url=detail_page_url)
-    print(html_txt)
-    rtn = parse_detail_page(html=html_txt)
+
+    # detail_page_url = 'https://www.tripadvisor.com/Airline_Review-d8728984-Reviews-Adria-Airways#REVIEWS'
+    # html_txt = get_page_html_txt(url=detail_page_url)
+    # print(html_txt)
+    # rtn = parse_detail_page(html=html_txt)
 
 

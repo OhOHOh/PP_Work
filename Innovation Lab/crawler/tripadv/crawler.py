@@ -52,7 +52,7 @@ def goto_next_home_page(url):
     # browser = webdriver.Chrome(executable_path=r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe')
     # browser = webdriver.PhantomJS(executable_path=r'C:\Users\runyu\Downloads\phantomjs-2.1.1-windows\bin\phantomjs.exe')
     browser = webdriver.Chrome(executable_path='/Users/runshen/chromedriver') #Mac self
-    # browser = webdriver.Chrome(executable_path=r'C:\Users\runyu\Downloads\chromedriver.exe') #win10
+    browser = webdriver.Chrome(executable_path=r'C:\Users\runyu\Downloads\chromedriver.exe') #win10
     browser.get('https://www.tripadvisor.com/Airlines')
     time.sleep(5)
     print(browser.page_source)
