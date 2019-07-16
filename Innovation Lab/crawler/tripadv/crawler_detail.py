@@ -25,7 +25,8 @@ def get_page_html_txt_selenium(url):
     '''
     使用 selenium 
     '''
-    browser = webdriver.Chrome(executable_path=r'C:\Users\runyu\Downloads\chromedriver.exe') #win10
+    # browser = webdriver.Chrome(executable_path=r'C:\Users\runyu\Downloads\chromedriver.exe') #win10
+    browser = webdriver.Chrome(executable_path='/Users/runshen/chromedriver') #Mac self
     browser.get(url)
     # "read more" 按钮不可点击, 正文才可点击, 点击之后出来完整的正文内容
     button = browser.find_element_by_class_name("common-text-ReadMore__ctaWrapperNewline--1iDIz") # common-text-ReadMore__content--2X4LR
