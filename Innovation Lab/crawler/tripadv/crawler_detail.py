@@ -40,9 +40,6 @@ def parse_detail_page(html):
     抓取 detail page
     return:
         返回页面下所有人的标题、评论, 给航班的打分等
-
-    problem:
-        derail 页面没有相应的东西？？？使用 selenium 可以解决!
     '''
     # 使用 bs 对网页进行解析
     bsObj = BeautifulSoup(html, 'html5lib')
@@ -72,11 +69,17 @@ def parse_detail_page(html):
         except AttributeError as e:
             reviews_dict['DOV'] = None
         # date of write
-        reviews_dict['DOW'] = review_item.find("div", attrs={"class": "social-member-event-MemberEventOnObjectBlock__event_type--3njyv"}).get_text().split("wrote a review ")[-1]
+        try:
+            reviews_dict['DOW'] = review_item.find("div", attrs={"class": "social-member-event-MemberEventOnObjectBlock__event_type--3njyv"}).get_text().split("wrote a review ")[-1]
+        except AttributeError as e:
+            reviews_dict['DOW'] = None
 
         # score: total score + other 8 scores
         # total score
         tmp_total_score = review_item.find("div", attrs={"class": "location-review-review-list-parts-RatingLine__bubbles--GcJvM"})
+        total_score = tmp_total_score.span.attrs['class'][-1].split("_")[-1]
+        reviews_dict['Tscore'] = int(total_score) / 10
+        print(reviews_dict['Tscore'])
 
         reviews_list.append(reviews_dict)
     
@@ -87,5 +90,5 @@ if __name__ == '__main__':
     detail_page_url = 'https://www.tripadvisor.com/Airline_Review-d8728984-Reviews-Adria-Airways'
     html_txt = get_page_html_txt_selenium(url=detail_page_url)
     rtn = parse_detail_page(html=html_txt)
-    print(rtn)
+    # print(rtn)
     
