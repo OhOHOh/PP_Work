@@ -25,8 +25,8 @@ def get_page_html_txt_selenium(url):
     '''
     使用 selenium 
     '''
-    # browser = webdriver.Chrome(executable_path=r'C:\Users\runyu\Downloads\chromedriver.exe') #win10
-    browser = webdriver.Chrome(executable_path='/Users/runshen/chromedriver') #Mac self
+    browser = webdriver.Chrome(executable_path=r'C:\Users\runyu\Downloads\chromedriver.exe') #win10
+    # browser = webdriver.Chrome(executable_path='/Users/runshen/chromedriver') #Mac self
     browser.get(url)
     # "read more" 按钮不可点击, 正文才可点击, 点击之后出来完整的正文内容
     button = browser.find_element_by_class_name("common-text-ReadMore__ctaWrapperNewline--1iDIz") # common-text-ReadMore__content--2X4LR
@@ -64,12 +64,12 @@ def parse_detail_page(html):
         reviews_dict['start'] = tmp_list[0].get_text().split(" - ")[0]
         reviews_dict['end'] = tmp_list[0].get_text().split(" - ")[1]
         reviews_dict['region'] = tmp_list[1].get_text()
-        # date of travel
+        # date of travel (maybe not exist) 
         try:
             reviews_dict['DOV'] = review_item.find("div", attrs={"class": "location-review-review-list-parts-EventDate__event_date--1epHa"}).get_text()[16:]
         except AttributeError as e:
             reviews_dict['DOV'] = None
-        # date of write
+        # date of write (maybe not exist)
         try:
             reviews_dict['DOW'] = review_item.find("div", attrs={"class": "social-member-event-MemberEventOnObjectBlock__event_type--3njyv"}).get_text().split("wrote a review ")[-1]
         except AttributeError as e:
@@ -80,7 +80,32 @@ def parse_detail_page(html):
         tmp_total_score = review_item.find("div", attrs={"class": "location-review-review-list-parts-RatingLine__bubbles--GcJvM"})
         total_score = tmp_total_score.span.attrs['class'][-1].split("_")[-1]
         reviews_dict['Tscore'] = int(total_score) / 10
-        print(reviews_dict['Tscore'])
+        # print(reviews_dict['Tscore'])
+        # other scores (maybe not exist)
+        other_scores_list = []
+        other_scores_name_list = ['LR', 'SC', 'FE', 'CS', 'VM', 'CL', 'CB', 'FB']
+        try:
+            tmp_other_scores_item = review_item.find("div", attrs={"class": "location-review-review-list-parts-AdditionalRatings__ratings--hIt-r"})
+            # print("1")
+            tmp_other_socres = tmp_other_scores_item.find_all("div", attrs={"class": "location-review-review-list-parts-AdditionalRatings__rating--1_G5W"})
+            # print("2")
+            print(len(tmp_other_socres))
+            for i in range(8):
+                if i < len(tmp_other_socres):
+                    reviews_dict[other_scores_name_list[i]] = int(tmp_other_socres[i].span.span.attrs['class'][-1].split("_")[-1]) / 10
+                    # print("3")
+                else:
+                    reviews_dict[other_scores_name_list[i]] = -1
+            # print(tmp_other_scores_item)
+        except Exception as e:
+            reviews_dict['LR'] = -1 # LegRoom
+            reviews_dict['SC'] = -1 # Seat comfirt
+            reviews_dict['FE'] = -1 # In-flight Entertainment
+            reviews_dict['CS'] = -1 # Customer Service
+            reviews_dict['VM'] = -1 # Value for Money
+            reviews_dict['CL'] = -1 # Cleanliness
+            reviews_dict['CB'] = -1 # Check-in and Boarding
+            reviews_dict['FB'] = -1 # Food and Beverage
 
         reviews_list.append(reviews_dict)
     
@@ -91,5 +116,5 @@ if __name__ == '__main__':
     detail_page_url = 'https://www.tripadvisor.com/Airline_Review-d8728984-Reviews-Adria-Airways'
     html_txt = get_page_html_txt_selenium(url=detail_page_url)
     rtn = parse_detail_page(html=html_txt)
-    # print(rtn)
+    print(rtn)
     
