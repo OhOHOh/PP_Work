@@ -1,6 +1,7 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 from urllib.error import HTTPError
+import pandas as pd
 
 import time
 import config
@@ -76,11 +77,15 @@ if __name__ == '__main__':
 #   下面是完成可执行代码, 能够爬取所有 HOME_PAGE 上的所有航空公司的信息
     page_index = 0
     Airlines = []
+    result = pd.DataFrame(data=Airlines, columns=['name', 'reviews', 'link'])
     while (True):
+    # while (page_index < 2):
         HOME_URL = 'https://www.tripadvisor.com/MetaPlacementAjax?placementName=airlines_lander_main&skipLocation=true' + "&page=" + str(page_index)
         html_txt = get_page_html_txt(HOME_URL)
         airlines_per_page = parse_home_page(html_txt)
         print("{} -parse finished!".format(HOME_URL))
+        df = pd.DataFrame(data=airlines_per_page, columns=['name', 'reviews', 'link'])
+        result = pd.concat(objs=[result, df], ignore_index=True)
         Airlines.append(airlines_per_page)
         if len(airlines_per_page) < 10:
             print("{} -does not have 10 arilines!".format(HOME_URL))
@@ -89,6 +94,7 @@ if __name__ == '__main__':
         time.sleep(2)
 
     print(Airlines)
+    result.to_csv("./home_page_info.csv")
     
 #   下面开始测试爬取 DETAIL_PAGE 的信息!
     # page_index = 0
