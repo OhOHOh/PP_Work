@@ -74,18 +74,30 @@ def parse_detail_page(html, companyName):
         # companyName
         reviews_dict['companyName'] = companyName
         # title
-        tmp_title = review_item.find("div", attrs={"class": "location-review-review-list-parts-ReviewTitle__reviewTitle--2GO9Z"})
-        reviews_dict['title'] = tmp_title.a.span.span.string
+        try:
+            tmp_title = review_item.find("div", attrs={"class": "location-review-review-list-parts-ReviewTitle__reviewTitle--2GO9Z"})
+            reviews_dict['title'] = tmp_title.a.span.span.string
+        except Exception as e:
+            reviews_dict['title'] = None
         # content
-        tmp_content = review_item.find("div", attrs={"class": "common-text-ReadMore__content--2X4LR"})
-        reviews_dict['content'] = tmp_content.get_text()
+        try:
+            tmp_content = review_item.find("div", attrs={"class": "common-text-ReadMore__content--2X4LR"})
+            reviews_dict['content'] = tmp_content.get_text()
+        except Exception as e:
+            reviews_dict['content'] = None
         # cabin, origin, destination, region
-        tmp = review_item.find("div", attrs={"class": "location-review-review-list-parts-RatingLine__labelsContainer--rSajH"})
-        tmp_list = tmp.contents
-        reviews_dict['cabin'] = tmp_list[-1].get_text()
-        reviews_dict['origin'] = tmp_list[0].get_text().split(" - ")[0]
-        reviews_dict['destination'] = tmp_list[0].get_text().split(" - ")[1]
-        reviews_dict['region'] = tmp_list[1].get_text()
+        try:
+            tmp = review_item.find("div", attrs={"class": "location-review-review-list-parts-RatingLine__labelsContainer--rSajH"})
+            tmp_list = tmp.contents
+            reviews_dict['cabin'] = tmp_list[-1].get_text()
+            reviews_dict['origin'] = tmp_list[0].get_text().split(" - ")[0]
+            reviews_dict['destination'] = tmp_list[0].get_text().split(" - ")[1]
+            reviews_dict['region'] = tmp_list[1].get_text()
+        except Exception as e:
+            reviews_dict['cabin'] = None
+            reviews_dict['origin'] = None
+            reviews_dict['destination'] = None
+            reviews_dict['region'] = None
         # date of travel (maybe not exist) 
         try:
             reviews_dict['DOV'] = review_item.find("div", attrs={"class": "location-review-review-list-parts-EventDate__event_date--1epHa"}).get_text()[16:]
@@ -101,21 +113,28 @@ def parse_detail_page(html, companyName):
         except AttributeError as e:
             reviews_dict['DOW'] = None
         # contribution, helpful
-        tmp_contribution = review_item.find_all("span", attrs={"class": "social-member-MemberHeaderStats__stat_item--34E1r"})
-        reviews_dict['contribution'] = 0
-        reviews_dict['helpful'] = 0
-        # print(len(tmp_contribution))
-        if len(tmp_contribution) == 1:
-            reviews_dict['contribution'] = tmp_contribution[0].span.span.string
-        if len(tmp_contribution) == 2:
-            reviews_dict['contribution'] = tmp_contribution[0].span.span.string
-            reviews_dict['helpful'] = tmp_contribution[1].span.span.string
+        try:
+            tmp_contribution = review_item.find_all("span", attrs={"class": "social-member-MemberHeaderStats__stat_item--34E1r"})
+            reviews_dict['contribution'] = 0
+            reviews_dict['helpful'] = 0
+            # print(len(tmp_contribution))
+            if len(tmp_contribution) == 1:
+                reviews_dict['contribution'] = tmp_contribution[0].span.span.string
+            if len(tmp_contribution) == 2:
+                reviews_dict['contribution'] = tmp_contribution[0].span.span.string
+                reviews_dict['helpful'] = tmp_contribution[1].span.span.string
+        except Exception as e:
+            reviews_dict['contribution'] = 0
+            reviews_dict['helpful'] = 0
         # print("{}, {}".format(reviews_dict['contribution'], reviews_dict['helpful']))
         # score: total score + other 8 scores
         # total score
-        tmp_total_score = review_item.find("div", attrs={"class": "location-review-review-list-parts-RatingLine__bubbles--GcJvM"})
-        total_score = tmp_total_score.span.attrs['class'][-1].split("_")[-1]
-        reviews_dict['Tscore'] = int(total_score) / 10
+        try:
+            tmp_total_score = review_item.find("div", attrs={"class": "location-review-review-list-parts-RatingLine__bubbles--GcJvM"})
+            total_score = tmp_total_score.span.attrs['class'][-1].split("_")[-1]
+            reviews_dict['Tscore'] = int(total_score) / 10
+        except Exception as e:
+            reviews_dict['Tscore'] = None
         # print(reviews_dict['Tscore'])
         # other scores (maybe not exist)
         other_scores_list = []
