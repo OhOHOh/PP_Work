@@ -198,10 +198,13 @@ if __name__ == '__main__':
     options = webdriver.ChromeOptions()
     options.add_argument('--ignore-certificate-errors')
     # browser = webdriver.Chrome(executable_path='/Users/runshen/chromedriver') #Mac self
-    browser = webdriver.Chrome(executable_path=r'C:\Users\Runshen\Downloads\chromedriver.exe', options=options) # Runshen
+    # browser = webdriver.Chrome(executable_path=r'C:\Users\Runshen\Downloads\chromedriver.exe', options=options) # Runshen
+    browser = webdriver.Chrome(executable_path=r'C:\Users\runyu\Downloads\chromedriver.exe', options=options) # runyu
     result = pd.DataFrame(columns=['companyName', 'title', 'content','cabin', 'origin', 'destination', 'region', 'DOV', 'DOW', 'contribution', 'helpful', 'Tscore', 'LR', 'SC', 'FE', 'CS', 'VM', 'CL', 'CB', 'FB'])
-    home_page_df = pd.read_csv(r"C:\Users\Runshen\Documents\GitHub\PP_Work\Innovation Lab\crawler\home_page_info.csv")
+    # home_page_df = pd.read_csv(r"C:\Users\Runshen\Documents\GitHub\PP_Work\Innovation Lab\crawler\home_page_info.csv")
+    home_page_df = pd.read_csv(r"./home_page_info.csv")
     for ix, company in home_page_df.iterrows():
+        tmp_result = pd.DataFrame(columns=['companyName', 'title', 'content','cabin', 'origin', 'destination', 'region', 'DOV', 'DOW', 'contribution', 'helpful', 'Tscore', 'LR', 'SC', 'FE', 'CS', 'VM', 'CL', 'CB', 'FB'])
         page_index = 0
         print("{} is crawling ... totally {} reviews".format(company['name'], company['reviews']))
         # while(page_index < company['reviews']):
@@ -213,7 +216,8 @@ if __name__ == '__main__':
             # df.to_csv(r"./detail_page_tmp/{}.csv".format(company['name']))
             if df is not None:
                 print("    page {:5} is finshed!".format(int(page_index/5)))
-                result = pd.concat(objs=[result, df], ignore_index=True)
+                # result = pd.concat(objs=[result, df], ignore_index=True)
+                tmp_result
             if is_last_page:
                 break
             else:
