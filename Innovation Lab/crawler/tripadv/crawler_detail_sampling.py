@@ -43,7 +43,7 @@ def get_page_html_txt_selenium(url, browser):
             browser.get(url)
             # "read more" 按钮不可点击, 正文才可点击, 点击之后出来完整的正文内容
             # button = browser.find_element_by_class_name("common-text-ReadMore__ctaWrapperNewline--1iDIz") # common-text-ReadMore__content--2X4LR
-            button = WebDriverWait(browser, 20, 0.1).until(
+            button = WebDriverWait(browser, 20, 1).until(
                 EC.presence_of_element_located(
                     (By.CLASS_NAME,
                      "common-text-ReadMore__ctaWrapperNewline--1iDIz")))
@@ -53,11 +53,13 @@ def get_page_html_txt_selenium(url, browser):
             print(e)
             print("{} can not get html_txt".format(url))
             try_times = try_times + 1
+            time.sleep(3)
             continue
     if try_times == 3:
         return None
     else:
-        time.sleep(3)
+        # 能点击button, 点击之后等待2秒
+        time.sleep(2)
         return browser.page_source
 
 
@@ -280,14 +282,8 @@ if __name__ == '__main__':
     browser = webdriver.Chrome(
         executable_path=driver_path,
         options=options)  # Runshen
-    # browser = webdriver.Chrome(
-    #     executable_path=r'C:\Users\runyu\Downloads\chromedriver.exe',
-    #     options=options)  # runyu
-    # result = pd.DataFrame(columns=['companyName', 'title', 'content','cabin', 'origin', 'destination', 'region', 'DOV', 'DOW', 'contribution', 'helpful', 'Tscore', 'LR', 'SC', 'FE', 'CS', 'VM', 'CL', 'CB', 'FB'])
-    # home_page_df = pd.read_csv(r"C:\Users\Runshen\Documents\GitHub\PP_Work\Innovation Lab\crawler\home_page_info.csv")
     home_page_df = pd.read_csv(r"./tripadv/home_page_info.csv")
-    # for ix, company in home_page_df.iterrows():
-    for i in range(0, home_page_df.shape[0]):
+    for i in range(600, home_page_df.shape[0]):
         per_company_reviews = pd.DataFrame(columns=[
             'companyName', 'title', 'content', 'cabin', 'origin',
             'destination', 'region', 'DOV', 'DOW', 'contribution', 'helpful',
@@ -295,9 +291,7 @@ if __name__ == '__main__':
         ])
         page_index = 0
         print("{}. company {:15} is crawling ... totally {} reviews".format(i, home_page_df.loc[i, 'name'], home_page_df.loc[i, 'reviews']))
-        # while(page_index < company['reviews']):
-        # while(page_index < 1):
-        while (True):
+        while (int(page_index / 5) < 2000):  #对某个公司下的所有review进行爬取, 对单个公司, 最多采集前1W条评论(前2000页)
             company_detail_page_url = make_detail_page_url(url=home_page_df.loc[i, 'link'], page_index=page_index)
             html_txt = get_page_html_txt_selenium(url=company_detail_page_url, browser=browser)
             if html_txt is None: # also the last page
@@ -311,28 +305,9 @@ if __name__ == '__main__':
             if is_last_page:
                 break
             else:
-                time.sleep(5)
+                time.sleep(1)  # get_page_html_txt_selenium 中已经sleep 2
             page_index = page_index + 5
-        per_company_reviews.to_csv(r'./tripadv/detail_page_reviews_per_company/{}.csv'.format(home_page_df.loc[i, 'name']))
+        # per_company_reviews.to_csv(r'./tripadv/detail_page_reviews_per_company/{}.csv'.format(home_page_df.loc[i, 'name']))
+        per_company_reviews.to_csv(r'C:/Users/runyu/Desktop/detail_page_reviews_per_company/{}.csv'.format(home_page_df.loc[i, 'name']))
         del per_company_reviews
         gc.collect()
-    # result.to_csv("./reviews_info.csv")
-
-    # test for make_detail_page_url
-    # url = 'https://www.tripadvisor.com/Airline_Review-d11831132-Reviews-Aerogaviota'
-    # rtn = make_detail_page_url(url, 10)
-    # print(rtn)
-
-    # test for one detail page
-    # html_txt = get_page_html_txt_selenium(url=detail_page_url)
-    # rtn = parse_detail_page(html=html_txt)
-    # rtn.to_csv("./test_detail_one_page.csv")
-"""
-Error 记录
-https://www.tripadvisor.com/Airline_Review-d8728986-Reviews-or905-Aer-Lingus:
-    File "c:/Users/Runshen/Documents/GitHub/PP_Work/Innovation Lab/crawler/tripadv/crawler_detail.py", line 177, in <module>
-    df, is_last_page = parse_detail_page(html=html_txt)
-    File "c:/Users/Runshen/Documents/GitHub/PP_Work/Innovation Lab/crawler/tripadv/crawler_detail.py", line 80, in parse_detail_page
-    tmp_list = tmp.contents
-    AttributeError: 'NoneType' object has no attribute 'contents'
-"""

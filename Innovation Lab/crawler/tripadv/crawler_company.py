@@ -1,10 +1,16 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 from urllib.error import HTTPError
-import pandas as pd
+import requests
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import NoSuchElementException
 
 import time
 import config
+import pandas as pd
 
 
 def get_page_html_txt(url):
@@ -48,10 +54,43 @@ def parse_home_page(html):
         item_dict['link'] = item.find("a", attrs={"class":
                                                   "detailsLink"})['href']
         item_dict['link'] = 'https://www.tripadvisor.com' + item_dict['link']
+        # company_url
+        item_dict['ComUrl'] = get_company_url(review_link=item_dict['link'])
+        print(item_dict)
 
+        # dict 已经完成
         items_list.append(item_dict)
 
     return items_list
+
+
+def get_company_url(review_link):
+    '''
+    进入company下的 review_link, 在其中找出 company 的官网
+    '''
+    driver_path = './chromedriver.exe'
+    options = webdriver.ChromeOptions()
+    options.add_argument('--ignore-certificate-errors')
+    browser = webdriver.Chrome(executable_path=driver_path, options=options)  # Runshen
+    rtn = "."
+
+    try:
+        browser.get(review_link)
+        button = WebDriverWait(browser, 10, 0.1).until(EC.presence_of_element_located((By.CLASS_NAME,"flights-airline-review-page-airline-review-header-AirlineDetailHeader__websiteContainer--1e0-x")))
+        button.click()
+
+        time.sleep(3)
+        handles = browser.window_handles # 获取所有的标签页
+        browser.switch_to.window(handles[-1])
+        rtn = browser.current_url
+    except:
+        pass
+
+    browser.quit()
+
+    return rtn
+
+
 
 
 def parse_detail_page(html):
@@ -84,6 +123,7 @@ def parse_detail_page(html):
         # reviews_list.append(reviews_dict)
 
 
+
 if __name__ == '__main__':
     # 单独 HOME_PAGE 页面的测试
     # HOME_URL = config.HOME_URL_NEW + "&page=0"
@@ -95,8 +135,8 @@ if __name__ == '__main__':
     #   下面是完成可执行代码, 能够爬取所有 HOME_PAGE 上的所有航空公司的信息
     page_index = 0
     Airlines = []
-    result = pd.DataFrame(data=Airlines, columns=['name', 'reviews', 'link'])
-    while (True):
+    result = pd.DataFrame(data=Airlines, columns=['name', 'reviews', 'link', 'ComUrl'])
+    while (True): # 每页有10个company
         # while (page_index < 2):
         HOME_URL = 'https://www.tripadvisor.com/MetaPlacementAjax?placementName=airlines_lander_main&skipLocation=true' + "&page=" + str(
             page_index)
@@ -104,7 +144,7 @@ if __name__ == '__main__':
         airlines_per_page = parse_home_page(html_txt)
         print("{} -parse finished!".format(HOME_URL))
         df = pd.DataFrame(data=airlines_per_page,
-                          columns=['name', 'reviews', 'link'])
+                          columns=['name', 'reviews', 'link', 'ComUrl'])
         result = pd.concat(objs=[result, df], ignore_index=True)
         Airlines.append(airlines_per_page)
         if len(airlines_per_page) < 10:

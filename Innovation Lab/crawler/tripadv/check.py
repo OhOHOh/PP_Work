@@ -6,8 +6,11 @@ df = pd.read_csv("./tripadv/home_page_info.csv")
 print(df['reviews'].sum())
 print(df.info('deep'))
 print(df.loc[2, 'name'])
-for i in range(0, df.shape[0]):
-    print(i)
+df.loc[df['reviews']>13000, 'reviews'] = 13000
+print(
+    df['reviews'].sum() * 0.8
+)
+
 
 # s = "my name is runyu"
 # print(sys.getsizeof(s))
