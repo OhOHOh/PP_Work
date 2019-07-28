@@ -55,8 +55,9 @@ def parse_home_page(html):
                                                   "detailsLink"})['href']
         item_dict['link'] = 'https://www.tripadvisor.com' + item_dict['link']
         # company_url
-        item_dict['ComUrl'] = get_company_url(review_link=item_dict['link'])
-        print(item_dict)
+        item_dict['ComUrl'] = 'not now'
+        # item_dict['ComUrl'] = get_company_url(review_link=item_dict['link'])
+        # print(item_dict)
 
         # dict 已经完成
         items_list.append(item_dict)

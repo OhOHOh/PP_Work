@@ -283,7 +283,7 @@ if __name__ == '__main__':
         executable_path=driver_path,
         options=options)  # Runshen
     home_page_df = pd.read_csv(r"./tripadv/home_page_info.csv")
-    for i in range(46, 300):
+    for i in range(579, 584):  # 300=611
         per_company_reviews = pd.DataFrame(columns=[
             'companyName', 'title', 'content', 'cabin', 'origin',
             'destination', 'region', 'DOV', 'DOW', 'contribution', 'helpful',
