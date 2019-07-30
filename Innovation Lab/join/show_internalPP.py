@@ -28,10 +28,11 @@ def urlSplit_for_PP(url):
 
 
 df = pd.read_csv(
-    r'C:\Users\runyu\Documents\Innovation Lab\Airlines_Travel sellers in Paypal.csv'
+    r'../../../Innovation Lab/Airlines_Travel sellers in Paypal.csv'
 )
-use_cols = ['busn_name', 'busn_supp_url', 'url']
+use_cols = ['cust_id', 'busn_name', 'busn_supp_url', 'url']
 df = df[use_cols]
 # print(df.url.value_counts())
 df['MurlPP'] = df['url'].apply(urlSplit_for_PP)
-print(df['MurlPP'].head(100))
+# print(df['MurlPP'].head(100))
+print(df.loc[308045])
