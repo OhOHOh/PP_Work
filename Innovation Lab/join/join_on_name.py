@@ -42,14 +42,17 @@ def matcher2(crawler_df, PP_df, join_result):
     PP_df['busn_name'] = PP_df['busn_name'].str.lower()
     count = 0
     for i in range(crawler_df.shape[0]):
-        if ~np.isnan(join_result.loc[i, 'cust_idPP']) or crawler_df.loc[i, 'name'] == '.':
+        if ~np.isnan(join_result.loc[i, 'cust_idPP']
+                     ) or crawler_df.loc[i, 'name'] == '.':
             continue
         rtn = process.extractOne(crawler_df.loc[i, 'name'],
                                  PP_df['busn_name'],
                                  scorer=fuzz.token_sort_ratio)
         print(rtn)
-        if rtn[1] == 100 and PP_df.loc[rtn[2], 'cust_id'] not in join_result['cust_idPP'].values:
-            join_result.loc[join_result['nameC'] == crawler_df.loc[i, 'name'], 'cust_idPP'] = PP_df.loc[rtn[2], 'cust_id']
+        if rtn[1] == 100 and PP_df.loc[rtn[2], 'cust_id'] not in join_result[
+                'cust_idPP'].values:
+            join_result.loc[join_result['nameC'] == crawler_df.loc[i, 'name'],
+                            'cust_idPP'] = PP_df.loc[rtn[2], 'cust_id']
             count = count + 1
     print("totally(100%) match: {}".format(count))
 
@@ -70,12 +73,13 @@ if __name__ == '__main__':
         "../../../Innovation Lab/Airlines_Travel sellers in Paypal.csv",
         usecols=use_cols_for_PP)
 
-    # 3.开始-Match 1. 不做任何修改直接查找 - 116
+    # 3.开始-Match 1. 不做任何修改直接查找 - 116个 10000+s
     # with timer("1 - No Modify"):
     #     matcher1(crawler_df, PP_df, join_result)
     # join_result.to_csv("./result2.csv")
 
-    # 4.开始-Match 2. 去除mtach1中完全匹配到的, 再将所有字母小写, 使用不按顺序的规则
-    join_result = pd.read_csv("./result2.csv")
+    # 4.开始-Match 2. 去除mtach1中完全匹配到的, 再将所有字母小写, 使用不按顺序的规则 - 2个 1810s
+    join_result = pd.read_csv("./result1.csv")
     with timer("2 - lower and scorer=fuzz.token_sort_ratio"):
         matcher2(crawler_df, PP_df, join_result)
+    join_result.to_csv("./result2.csv")

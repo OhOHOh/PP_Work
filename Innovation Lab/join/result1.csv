@@ -1,612 +1,613 @@
-('Adria Airways', 100, 308045)
-('ED', 90, 34371)
-('AEGEAN AIRLINES S.A.', 95, 309098)
-('Aer Lingus N.A.', 95, 234525)
-('Ông', 90, 2893)
-('a', 90, 1255)
-('AE', 90, 23934)
-('Rol', 90, 65069)
-('Aerolineas Argentinas', 100, 132212)
-('a', 90, 1255)
-('Aeromexico', 100, 9194)
-('airlines', 90, 8205)
-('Express airways', 90, 3298)
-('AFRIQIYAH AIRWAYS', 100, 134837)
-('Aigle Azur', 100, 292162)
-('air algerie', 100, 359878)
-('Le', 90, 3290)
-('AI', 90, 61072)
-('Stan', 90, 2565)
-('AIR AUSTRAL', 100, 106927)
-('bag', 90, 43218)
-('al', 90, 44635)
-('opera', 90, 115506)
-('Air Botswana', 100, 70956)
-('kin', 90, 3300)
-('SAN', 90, 12785)
-('CA', 90, 24812)
-('Air Canada', 100, 130731)
-('na', 90, 8107)
-('Air Caraibes', 100, 224708)
-('AI', 90, 61072)
-('Ông', 90, 2893)
-('MS.', 90, 6612)
-('na', 90, 8107)
-('Choice Air', 95, 260678)
-('Air corsica', 100, 76506)
-('long', 90, 62609)
-('IRE', 90, 42285)
-('a', 90, 1255)
-('IT', 90, 15562)
-('EUROPA AIR', 95, 251682)
-('me', 90, 864)
-('Air France', 100, 201961)
-('LAN', 90, 1372)
-('li', 90, 57848)
-('Icelandair', 90, 9973)
-('AI', 90, 61072)
-('express', 90, 38497)
-('Italy&Italy', 95, 245162)
-('a', 90, 1255)
-('a', 90, 1255)
-('AT', 90, 45742)
-('airkoryo', 94, 226186)
-('Stan', 90, 2565)
-('Air Macau', 100, 129799)
-('Air Madagascar', 100, 1075)
-('Ma', 90, 7769)
-('Ma', 90, 7769)
-('AIR MAURITIUS', 100, 111620)
-('Med', 90, 92982)
-('MO', 90, 11179)
-('na', 90, 8107)
-('Air New Zealand', 100, 262581)
-('AI', 90, 61072)
-('nada', 90, 11599)
-('OS', 90, 92)
-('Pa', 90, 2431)
-('peace', 90, 19604)
-('long', 90, 62609)
-('Air Rarotonga', 100, 194433)
-('Pi', 90, 10171)
-('al', 90, 44635)
-('seo', 90, 37779)
-('AI', 90, 61072)
-('Air Seychelles Ltd', 95, 184891)
-('Air Tahiti Nui', 95, 11744)
-('Air Tahiti Nui', 100, 11744)
-('air transat', 100, 136803)
-('AT', 90, 45742)
-('long', 90, 62609)
-('Air Zimbabwe', 100, 246084)
-('AirAsia Berhad', 90, 63851)
-('dia', 90, 78745)
-('Pan', 90, 24046)
-('AirAsia', 90, 122782)
-('indonesia', 90, 3382)
-('PHILIP', 90, 18832)
-('Tha', 90, 26052)
-('Tha', 90, 26052)
-('a', 90, 1255)
-('a', 90, 1255)
-('keny', 90, 6547)
-('AirLink', 100, 111267)
-('ali', 90, 5605)
-('a', 90, 1255)
-('AlaskanAirLines', 93, 236429)
-('LAN', 90, 1372)
-('Alba', 90, 13098)
-('alex', 90, 7090)
-('alitalia', 100, 328282)
-('Allegiant Air', 100, 52260)
-('airlines', 90, 8205)
-('universal', 90, 77293)
-('OS', 90, 92)
-('Alsie Express', 100, 54250)
-('a', 90, 1255)
-('American Airlines', 100, 15076)
-('nippon', 90, 5456)
-('na', 90, 8107)
-('Ñandú', 90, 34230)
-('Ông', 90, 2893)
-('Anguilla Air Services Limited', 95, 316622)
-('airlines', 90, 8205)
-('arikair', 93, 76609)
-('airlines', 90, 8205)
-('Aruba Airlines', 100, 72382)
-('airlines', 90, 8205)
-('Atlantic Airlines', 95, 266351)
-('asiana airlines', 100, 195002)
-('SKY AIRLINE', 92, 185512)
-('france', 90, 39288)
-('ATA Airlines', 92, 50480)
-('ATA Airlines, Inc', 91, 407272)
-('Virgin Atlantic Airways', 95, 332172)
-('atlas', 90, 29469)
-('atlas', 90, 29469)
-('atlas', 90, 29469)
-('a', 90, 1255)
-('Aurora', 100, 305619)
-('tra', 90, 91062)
-('Austrian Airlines', 100, 3785)
-('avianca', 100, 272375)
-('airlines', 90, 8205)
-('airlines', 90, 8205)
-('a', 90, 1255)
-('AI', 90, 61072)
-('VIAJES ALAZUL', 90, 425)
-('a', 90, 1255)
-('hama', 90, 4908)
-('mb', 90, 47957)
-('Bangkok Airways', 100, 82068)
-('SA', 90, 19906)
-('atik', 90, 27790)
-('airlines', 90, 8205)
-('kin', 90, 3300)
-('airlines', 90, 8205)
-('a', 90, 1255)
-('Belavia -Belarusian Airlines', 98, 320187)
-('BHAir', 91, 208263)
-('airlines', 90, 8205)
-('airlines', 90, 8205)
-('Binter', 100, 8684)
-('blue air', 100, 189613)
-('LAN', 90, 1372)
-('BLUE PANORAMA AIRLINES SPA', 95, 281352)
-('Boliviana de Aviacion', 100, 248003)
-('Bora', 90, 25331)
-('Que', 90, 43841)
-('regional air', 90, 80486)
-('British airways', 100, 179561)
-('Brussels Airlines', 100, 15895)
-('Ha', 90, 29060)
-('BULGARIA AIR USA', 95, 62244)
-('AI', 90, 61072)
-('Calafia Airlines', 100, 369484)
-('Alai International', 92, 49107)
-('dia', 90, 78745)
-('Canadian North', 100, 313991)
-('na', 90, 8107)
-('Cape Air', 100, 221495)
-('Caribbean Airlines', 100, 371284)
-('airlines', 90, 8205)
-('Tha', 90, 26052)
-('Cathay Pacific', 100, 275777)
-('Cayman Airways Ltd', 95, 182055)
-('cebu pacific', 95, 19924)
-('a', 90, 1255)
-('tra', 90, 91062)
-('a', 90, 1255)
-('Ông', 90, 2893)
-('Ông', 90, 2893)
-('CHINA AIRLINES', 100, 293858)
-('airlines', 90, 8205)
-('Airlines Express', 95, 374404)
-('airlines', 90, 8205)
-('United Airlines', 95, 5512)
-('airlines', 90, 8205)
-('Amo', 90, 293)
-('Lê', 90, 6141)
-('City Jet', 93, 295987)
-('long', 90, 62609)
-('CM AIRLINES', 100, 414894)
-('Cobalt', 90, 64285)
-('airlines', 90, 8205)
-('CONDOR', 100, 47294)
-('contour', 100, 371800)
-('copa airlines', 100, 90818)
-('Taxi', 90, 9905)
-('airlines', 90, 8205)
-('a', 90, 1255)
-('airlines', 90, 8205)
-('Cuban', 90, 2626)
-('yp', 90, 13113)
-('CSA Czech Airlines', 95, 65371)
-('Daallo Airlines', 100, 3359)
-('ali', 90, 5605)
-('Dan', 90, 8295)
-('Delta Air Lines', 100, 79673)
-('Connect', 90, 19553)
-('airlines', 90, 8205)
-('Ông', 90, 2893)
-('a', 90, 1255)
-('International', 90, 677)
-('Le', 90, 3290)
-('Star', 90, 30404)
-('N/a', 90, 10630)
-('easyfly', 100, 315300)
-('Easyjet', 100, 203044)
-('SS', 90, 27938)
-('egyptair', 100, 27618)
-('airlines', 90, 8205)
-('Elite Airways', 100, 385560)
-('a', 90, 1255)
-('Emirates', 100, 16947)
-('AI', 90, 61072)
-('airlines', 90, 8205)
-('airlines', 90, 8205)
-('ernest', 100, 161209)
-('Ethiopianairlines', 97, 289483)
-('Etihad Airways', 100, 9935)
-('Etihad', 90, 82696)
-('LAN', 90, 1372)
-('airlines', 90, 8205)
-('Ông', 90, 2893)
-('a', 90, 1255)
-('Developer', 90, 1056)
-('port', 90, 12551)
-('a', 90, 1255)
-('AI', 90, 61072)
-('Finnair', 100, 28629)
-('firefly', 100, 391696)
-('First Air', 100, 17393)
-('Flair Airlines Ltd', 95, 135041)
-('Fly Allways N.V.', 95, 306690)
-('fly', 90, 14961)
-('Corporate', 95, 24217)
-('fly fly', 95, 92450)
-('Lê', 90, 6141)
-('a', 90, 1255)
-('Stan', 90, 2565)
-('FlyBe', 100, 13421)
-('opera', 90, 115506)
-('Lê', 90, 6141)
-('a', 90, 1255)
-('Flyegypt', 100, 82858)
-('Flyme', 100, 410097)
-('a', 90, 1255)
-('Lê', 90, 6141)
-('yp', 90, 13113)
-('fly', 90, 14961)
-('a', 90, 1255)
-('Ren', 90, 26289)
-('airlines', 90, 8205)
-('I&D', 90, 865)
-('airlines', 90, 8205)
-('GARUDA INDONESIA', 100, 86533)
-('RG', 90, 2928)
-('mania', 90, 6583)
-('Ông', 90, 2893)
-('airlines', 90, 8205)
-('Igoair', 91, 268164)
-('airlines', 90, 8205)
-('airlines', 90, 8205)
-('na', 90, 8107)
-('Tran', 90, 13984)
-('a', 90, 1255)
-('Gum Air NV', 95, 218415)
-('airlines', 95, 8205)
-('HAINAN AIRLINES', 100, 193449)
-('Hawaiian Airlines', 100, 274901)
-('airlines', 90, 8205)
-('ETI', 90, 13965)
-('airlines', 90, 8205)
-('express', 95, 38497)
-('Hong Kong Airlines Limited', 95, 47438)
-('Ông', 90, 2893)
-('EveryShop', 90, 94)
-('AI', 90, 61072)
-('AI', 90, 61072)
-('Iberia', 100, 226650)
-('Iberia Express', 100, 120753)
-('x', 90, 6130)
-('Icelandair', 100, 9973)
-('indio', 91, 395734)
-('a', 90, 1255)
-('BB', 90, 625)
-('interjet', 100, 129737)
-('a', 90, 1255)
-('airlines', 90, 8205)
-('IranAir', 100, 387753)
-('Iraqi Airways', 100, 223797)
-('opera', 90, 115506)
-('israr', 91, 8894)
-('a', 90, 1255)
-('a', 90, 1255)
-('airlines', 90, 8205)
-('zee', 90, 48933)
-('Jc', 90, 28474)
-('Jeju air', 100, 120874)
-('long', 90, 62609)
-('Jet2.com', 100, 1524)
-('jetblue', 100, 68688)
-('t', 90, 49909)
-('a', 90, 1255)
-('AUSTRAL', 90, 178294)
-('Star', 90, 30404)
-('Pa', 90, 2431)
-('airlines', 90, 8205)
-('SUI', 90, 2212)
-('airlines', 90, 8205)
-('Ông', 90, 2893)
-('a', 90, 1255)
-('IAT', 90, 4028)
-('Joy', 90, 701)
-('jubbaairways', 96, 55206)
-('airlines', 90, 8205)
-('IAT', 90, 4028)
-('a', 90, 1255)
-('airlines', 90, 8205)
-('Kenya Airways', 100, 75675)
-('a', 90, 1255)
-('KLM Royal Dutch Airlines', 100, 380568)
-('KOREAN AIR', 100, 144405)
-('a', 90, 1255)
-('a', 90, 1255)
-('Ông', 90, 2893)
-('Kuwait Airways', 100, 283253)
-('Compagnie', 95, 20774)
-('OS', 90, 92)
-('MO', 90, 11179)
-('airlines', 90, 8205)
-('me', 90, 864)
-('airlines', 90, 8205)
-('KYW', 90, 5911)
-('laserairlines', 96, 208414)
-('ATA Airlines', 92, 50480)
-('america', 90, 136821)
-('Amo', 90, 293)
-('Lê', 90, 6141)
-('Level', 100, 329271)
-('a', 90, 1255)
-('airlines', 90, 8205)
-('PT LION AIR', 95, 257403)
-('a', 90, 1255)
-('Jiang', 90, 49237)
-('Ông', 90, 2893)
-('LOT POLISH AIRLINES', 100, 240972)
-('ck', 90, 9432)
-('Lufthansa', 100, 161740)
-('LUX AIR', 92, 238900)
-('Ma', 90, 7769)
-('Mahan Air', 100, 120900)
-('malaysia airlines', 100, 125694)
-('Ma', 90, 7769)
-('ali', 90, 5605)
-('airlines', 90, 8205)
-('MANGO', 100, 143064)
-('airlines', 90, 8205)
-('Ma', 90, 7769)
-('airlines', 90, 8205)
-('Maya Island Air', 100, 16291)
-('a', 90, 1255)
-('IAT', 90, 4028)
-('airlines', 90, 8205)
-('MISTRAL AIR SRL', 95, 95257)
-('airlines', 90, 8205)
-('long', 90, 62609)
-('airlines', 90, 8205)
-('International', 90, 677)
-('airlines', 90, 8205)
-('airlines', 90, 8205)
-('a', 90, 1255)
-('long', 90, 62609)
-('na', 90, 8107)
-('OS', 90, 92)
-('Pa', 90, 2431)
-('N/a', 90, 10630)
-('airlines', 90, 8205)
-('long', 90, 62609)
-('Niki', 90, 12430)
-('a', 90, 1255)
-('NokAir', 92, 422094)
-('K', 90, 8097)
-('a', 90, 1255)
-('airlines', 90, 8205)
-('airlines', 90, 8205)
-('No', 90, 10879)
-('Nise', 90, 71035)
-('a', 90, 1255)
-('Kay', 90, 26090)
-('US Airways', 90, 113951)
-('Oman Air', 100, 350201)
-('a', 90, 1255)
-('long', 90, 62609)
-('s', 90, 19685)
-('airlines', 90, 8205)
-('airlines', 90, 8205)
-('International', 90, 677)
-('airlines', 90, 8205)
-('a', 90, 1255)
-('Linh', 90, 80537)
-('Dominic', 90, 60872)
-('IAT', 90, 4028)
-('fly fly', 95, 92450)
-('airlines', 90, 8205)
-('LAN', 90, 1372)
-('Le', 90, 3290)
-('airlines', 90, 8205)
-('Philippine Airlines', 95, 53102)
-('plus', 90, 13108)
-('a', 90, 1255)
-('a', 90, 1255)
-('airlines', 90, 8205)
-('Precision Air', 100, 73075)
-('long', 90, 62609)
-('mb', 90, 47957)
-('a', 90, 1255)
-('QATAR AIRWAYS', 100, 113060)
-('AI', 90, 61072)
-('airlines', 90, 8205)
-('Ông', 90, 2893)
-('N/a', 90, 10630)
-('Ông', 90, 2893)
-('Ông', 90, 2893)
-('AI', 90, 61072)
-('regional air', 100, 80486)
-('airlines', 90, 8205)
-('airlines', 90, 8205)
-('Royal Air Maroc', 100, 270351)
-('Royal Brunei Airlines Sdn Bhd', 95, 313513)
-('Dan', 90, 8295)
-('airlines', 90, 8205)
-('Lê', 90, 6141)
-('RwandAir', 100, 284562)
-('Ryanair', 100, 93834)
-('airlines', 95, 8205)
-('Safarilink Adventures', 90, 16324)
-('safi airways', 100, 368385)
-('a', 90, 1255)
-('Amo', 90, 293)
-('SAN', 90, 12785)
-('a', 90, 1255)
-('opera', 90, 115506)
-('SAS', 100, 48666)
-('Azores Airlines', 95, 107608)
-('na', 90, 8107)
-('airlines', 90, 8205)
-('airlines', 90, 8205)
-('airlines', 90, 8205)
-('Riga Scooter Tour', 90, 4606)
-('Seaborne Airlines', 100, 259841)
-('Ren', 90, 26289)
-('na', 90, 8107)
-('company', 90, 13311)
-('International', 90, 677)
-('airlines', 90, 8205)
-('airlines', 90, 8205)
-('airlines', 90, 8205)
-('airlines', 90, 8205)
-('SHREE GANESH TOURS AND TRAVELS', 90, 1151)
-('airlines', 90, 8205)
-('a', 90, 1255)
-('Silver Airways LLC', 95, 351755)
-('ton', 90, 3496)
-('Mr', 90, 3755)
-('Singapore Airlines', 100, 22730)
-('SKY AIRLINE', 100, 185512)
-('Sky Angkor Airlines', 100, 61918)
-('express', 90, 38497)
-('Le', 90, 3290)
-('airlines', 90, 8205)
-('Ma', 90, 7769)
-('K', 90, 8097)
-('KYW', 90, 5911)
-('airlines', 90, 8205)
-('airlines', 90, 8205)
-('Ma', 90, 7769)
-('Ông', 90, 2893)
-('Sola', 90, 12035)
-('Solomon', 90, 1382)
-('N/a', 90, 10630)
-('Rol', 90, 65069)
-('ds', 90, 44177)
-('SOUTH AFRICAN AIRWAYS SOC LTD', 95, 212797)
-('N/a', 90, 10630)
-('Southwest Airlines', 100, 83497)
-('Pi', 90, 10171)
-('Spirit Airlines, Inc', 95, 397986)
-('Ông', 90, 2893)
-('SPR', 90, 5767)
-('polish', 90, 15985)
-('SriLankan Airlines', 100, 140672)
-('jay', 90, 12942)
-('Uter', 90, 75366)
-('Star', 90, 30404)
-('Star', 90, 30404)
-('fly', 90, 14961)
-('Dan', 90, 8295)
-('SUN AIR EXPRESS, LLC', 95, 378256)
-('airlines', 90, 8205)
-('a', 90, 1255)
-('sun', 90, 17347)
-('Sunrise', 90, 4322)
-('Ông', 90, 2893)
-('Pa', 90, 2431)
-('Surinam Airways', 100, 143328)
-('International', 90, 677)
-('woo', 90, 14743)
-('na', 90, 8107)
-('airlines', 90, 8205)
-('TAAG ANGOLA AIRLINES', 100, 133125)
-('N/a', 90, 10630)
-('airlines', 90, 8205)
-('Refugio Patagon EIRL', 90, 12)
-('airlines', 90, 8205)
-('Air', 90, 133863)
-('airlines', 90, 8205)
-('Tam', 90, 29007)
-('port', 90, 12551)
-('TAR AEROLINEAS', 100, 187365)
-('a', 90, 1255)
-('Tha', 90, 26052)
-('Thai Lion air Agent', 95, 91493)
-('Tha', 90, 26052)
-('Tha', 90, 26052)
-('airlines', 90, 8205)
-('airlines', 90, 8205)
-('Dina', 90, 3125)
-('airlines', 90, 8205)
-('AI', 90, 61072)
-('airlines', 90, 8205)
-('ali', 90, 5605)
-('Tigerair', 90, 113884)
-('AI', 90, 61072)
-('Tradewind Aviation LLC', 95, 397486)
-('Ngo', 90, 6936)
-('na', 90, 8107)
-('S&M', 90, 5097)
-('Transavia Airlines CV', 90, 2448)
-('Tran', 90, 13984)
-('service', 90, 9160)
-('LIZ', 90, 114750)
-('Tropic Ocean Airways', 100, 24523)
-('t', 90, 49909)
-('LAN', 90, 1372)
-('United', 90, 1575)
-('TUI UK Ltd', 86, 504)
-('Ma', 90, 7769)
-('tunisair', 100, 176298)
-('Turkish Airlines', 100, 202571)
-('Stan', 90, 2565)
-('tus-tus', 95, 224396)
-('I', 90, 49496)
-('Ukraine International Airlines', 100, 207227)
-('a', 90, 1255)
-('United Airlines', 100, 5512)
-('airlines', 90, 8205)
-('AI', 90, 61072)
-('US-Bangla Airlines Ltd.', 95, 176849)
-('a', 90, 1255)
-('Stan', 90, 2565)
-('Nil', 90, 7572)
-('a', 90, 1255)
-('airlines', 90, 8205)
-('Transavia Airlines CV', 90, 2448)
-('Que', 90, 43841)
-('AI', 90, 61072)
-('Vietnam Airlines', 100, 57562)
-('airlines', 90, 8205)
-('airlines', 90, 8205)
-('Virgin Atlantic Airways', 100, 332172)
-('RG', 90, 2928)
-('a', 90, 1255)
-('VivaAerobus', 96, 370935)
-('Air', 90, 133863)
-('AI', 90, 61072)
-('airlines', 90, 8205)
-('Volaris', 100, 75800)
-('a', 90, 1255)
-('VUELING AIRLINES', 100, 159761)
-('Wamos Air', 100, 224648)
-('opera', 90, 115506)
-('Wasaya Airways LP', 95, 103469)
-('a', 90, 1255)
-('WestJet', 100, 240347)
-('D', 90, 26382)
-('WINAI', 91, 243292)
-('OS', 90, 92)
-('WinGO', 100, 25520)
-('Wings Air', 100, 394536)
-('a', 90, 1255)
-('long', 90, 62609)
-('me', 90, 864)
-('AI', 90, 61072)
-('SA', 90, 19906)
-('ak', 90, 110622)
-('Ma', 90, 7769)
-('Ryanair', 92, 93834)
-('me', 90, 864)
-('Yeti Airlines', 100, 280652)
-('OS', 90, 92)
-('a', 90, 1255)
+,nameC,cust_idPP
+0,Adria Airways,2.1672567552907277e+18
+1,Advanced Air,
+2,Aegean Airlines,
+3,Aer Lingus,
+4,Aero Mongolia,
+5,Aeroflot,
+6,Aerogaviota,
+7,Aerolinea de Antioquia,
+8,Aerolineas Argentinas,1.170162735509357e+18
+9,Aeromar,
+10,Aeromexico,1.802744593969958e+18
+11,Africa World Airlines,
+12,African Express Airways,
+13,Afriqiyah Airways,2.264787948730098e+18
+14,Aigle Azur,1.2222766410768125e+18
+15,Air Algerie,1.234219469590353e+18
+16,Air Antilles,
+17,Air Arabia,
+18,Air Astana,
+19,Air Austral,1.4367835613597156e+18
+20,Air Bagan,
+21,Air Baltic,
+22,air berlin [no longer operating],
+23,Air Botswana,2.142805176000248e+18
+24,Air Burkina,
+25,Air Busan,
+26,Air Cairo,
+27,Air Canada,1.347639480819021e+18
+28,Air Canada Rouge,
+29,Air Caraibes,2.3038765222384248e+18
+30,Air Century,
+31,Air Changan,
+32,Air Chathams,
+33,Air China,
+34,Air Choice One,
+35,Air Corsica,1.6856234659170854e+18
+36,Air Costa (no longer operating),
+37,Air Cote d Ivoire,
+38,Air Do,
+39,Air Dolomiti,
+40,Air Europa,
+41,Air Flamenco,
+42,Air France,1.8858039309689777e+18
+43,Air Greenland,
+44,Air Guilin,
+45,Air Iceland Connect (**this is not Icelandair**),
+46,Air India,
+47,Air India Express,
+48,Air Italy,
+49,Air Juan,
+50,Air KBZ,
+51,Air Kiribati,
+52,Air Koryo,
+53,Air Kyrgyzstan,
+54,Air Macau,1.5353743599380882e+18
+55,Air Madagascar,1.747929377289964e+18
+56,Air Malta,
+57,Air Manas,
+58,Air Mauritius,2.2281630995568617e+18
+59,Air Mediterranean,
+60,Air Moldova,
+61,Air Namibia,
+62,Air New Zealand,1.5847323598681516e+18
+63,Air Niugini,
+64,Air North (Canada),
+65,Air Nostrum,
+66,Air Panama,
+67,Air Peace,
+68,Air Pegasus (no longer operating),
+69,Air Rarotonga,1.4963005546943153e+18
+70,Air Saint Pierre,
+71,Air Senegal,
+72,Air Seoul,
+73,Air Serbia,
+74,Air Seychelles,
+75,Air Tahiti,
+76,Air Tahiti Nui,1.313886583302892e+18
+77,Air Transat,1.757092170782979e+18
+78,Air Vanuatu,
+79,Air VIA [no longer operating],
+80,Air Zimbabwe,1.263052076475857e+18
+81,AirAsia - AirAsia Berhad (Malaysia),
+82,AirAsia - AirAsia India,
+83,AirAsia - AirAsia Japan,
+84,AirAsia - AirAsia X Berhad (Malaysia),
+85,AirAsia - Indonesia AirAsia,
+86,AirAsia - Philippines AirAsia,
+87,AirAsia - Thai AirAsia,
+88,AirAsia - Thai AirAsia X,
+89,Airblue,
+90,Aircalin,
+91,AirKenya Express,
+92,Airlink,1.647083549154208e+18
+93,Airnorth (Australia),
+94,AirSWIFT,
+95,Alaska Airlines,
+96,Alaska Seaplanes,
+97,Alba Star,
+98,Alexandria Airlines,
+99,Alitalia,1.4711952621881946e+18
+100,Allegiant Air,1.378946249733187e+18
+101,Alliance Airlines,
+102,AlMasria Universal,
+103,ALROSA,
+104,Alsie Express,1.170147507836705e+18
+105,Amazonas,
+106,American Airlines,1.7266353666899044e+18
+107,ANA (All Nippon Airways),
+108,AnadoluJet,
+109,Andes Lineas Aereas,
+110,Angara Airlines,
+111,Anguilla Air Services,
+112,Ariana Afghan Airlines,
+113,Arik Air,
+114,Arkia Israel Airlines,
+115,Aruba Airlines,1.451351856248765e+18
+116,Aserca Airlines (no longer operating),
+117,Asia Atlantic Airlines,
+118,Asiana Airlines,2.0332317357054377e+18
+119,ASKY Airlines,
+120,ASL France,
+121,Astra Airlines,
+122,ATA Airlines (Iran),
+123,Atlantic Airways,
+124,Atlas Air,
+125,Atlas Atlantique [no longer operating],
+126,AtlasGlobal,
+127,Aurigny,
+128,Aurora,2.2861788191830917e+18
+129,Austral Lineas Aereas,
+130,Austrian Airlines,1.7105115096402652e+18
+131,Avianca,2.0822562673051648e+18
+132,Avior Airlines,
+133,Azerbaijan Airlines,
+134,Azimuth,
+135,Aztec Airways,
+136,Azul,
+137,Azur Air,
+138,Bahamasair,
+139,Bamboo Airways,
+140,Bangkok Airways,1.6377478787080315e+18
+141,Bassaka Air,
+142,Batik Air,
+143,Bayon Airlines,
+144,Bearskin Airlines,
+145,Beijing Capital Airlines,
+146,Bek Air,
+147,Belavia Belarusian Airlines,
+148,BH Air,
+149,Bhutan Airlines,
+150,Biman Bangladesh Airlines,
+151,Binter,2.027834441587179e+18
+152,Blue Air,1.9284371197733796e+18
+153,Blue Islands Air,
+154,Blue Panorama Airlines,
+155,Boliviana de Aviacion,1.2087587181345597e+18
+156,Borajet [no longer operating],
+157,Boutique Air,
+158,BRA (Braathens Regional Airways AB),
+159,British Airways,1.2128540128604298e+18
+160,Brussels Airlines,1.2909646987452076e+18
+161,Buddha Air,
+162,Bulgaria Air,
+163,Buta Airways,
+164,Calafia Airlines,1.550926871044508e+18
+165,CalmAir International,
+166,Cambodia Angkor Air,
+167,Canadian North,1.835007099663243e+18
+168,Canaryfly,
+169,Cape Air,2.188708596821903e+18
+170,Caribbean Airlines,1.6050338269326582e+18
+171,Caspian Airlines,
+172,Cathay Dragon (Dragonair),
+173,Cathay Pacific,1.2872948723619167e+18
+174,Cayman Airways,
+175,Cebu Pacific Air,
+176,CemAir,
+177,Central Mountain Air,
+178,Chair,
+179,Cham Wings,
+180,Chengdu Airlines,
+181,China Airlines,1.9853084655063465e+18
+182,China Eastern Airlines,
+183,China Express Airlines,
+184,China Southern Airlines,
+185,China United Airlines,
+186,Chongqing Airlines,
+187,Cinnamon Air,
+188,Citilink,
+189,CityJet,
+190,Citywing [no longer operating],
+191,CM Airlines,2.1676164724155791e+18
+192,Cobalt [no longer operating],
+193,Colorful GuiZhou Airlines,
+194,Condor,1.832184213112461e+18
+195,Contour,1.7594509348161295e+18
+196,Copa Airlines,1.3908719387271557e+18
+197,Copenhagen AirTaxi,
+198,Corendon Airlines,
+199,Corsair,
+200,Croatia Airlines,
+201,Cubana de Aviacion,
+202,Cyprus Airways,
+203,Czech Airlines,
+204,Daallo Airlines,1.4188427403957962e+18
+205,Dalian Airlines,
+206,DAT Danish Air Transport,
+207,Delta Air Lines,1.273310694486866e+18
+208,Denver Air Connection,
+209,Dniproavia [no longer operating - merged into Windrose Airlines],
+210,Donghai Airlines,
+211,Druk Air,
+212,Dynamic International Airways,
+213,Eagle Air,
+214,Eastar Jet,
+215,Eastern Airways,
+216,EasyFly,1.3072965144599406e+18
+217,easyJet,1.5056905697554678e+18
+218,Edelweiss Air,
+219,EGYPTAIR,2.0947036706062781e+18
+220,El Al Israel Airlines,
+221,Elite Airways,2.0157349516123095e+18
+222,Ellinair,
+223,Emirates,1.3301649373608146e+18
+224,Enter Air,
+225,Equatorial Congo Airlines [no longer operating],
+226,Eritrean Airlines,
+227,Ernest,2.1080809172512026e+18
+228,Ethiopian Airlines,
+229,Etihad Airways,1.2083711968979784e+18
+230,Etihad Regional [no longer operating],
+231,Euro Atlantic,
+232,European Coastal Airlines [no longer operating],
+233,Eurowings,
+234,EVA Air,
+235,Evelop,
+236,Far Eastern Air Transport,
+237,fastjet,
+238,Fiji Airways,
+239,Finnair,1.1566767274400172e+18
+240,firefly,1.6411700847902282e+18
+241,First Air,2.1671005494162337e+18
+242,Flair Airlines,
+243,Fly Allways,
+244,Fly Baghdad,
+245,Fly Corporate,
+246,Fly Tiwi,
+247,Fly540,
+248,Flyadeal,
+249,FlyArystan,
+250,Flybe,1.7777925130259617e+18
+251,flybmi [no longer operating],
+252,Flybondi,
+253,flydubai,
+254,FlyEgypt,2.0854488215528996e+18
+255,Flyme,1.3868142249921807e+18
+256,Flynas,
+257,FLYONE,
+258,FlyPelican,
+259,FlySafair,
+260,FMIAir,
+261,French bee,
+262,Frontier Airlines,
+263,Fuji Dream Airlines,
+264,Fuzhou Airlines,
+265,Garuda Indonesia,1.2739849056344325e+18
+266,Georgian Airways,
+267,Germania Airlines [no longer operating],
+268,Germanwings,
+269,GLO Airlines (no longer operating),
+270,GoAir,
+271,GOL Airlines,
+272,Golden Myanmar Airlines,
+273,Grand China Air,
+274,Groupe Transair,
+275,Gulf Air,
+276,Gum Air,
+277,GX Airlines,
+278,Hainan Airlines,1.6431331237519547e+18
+279,Hawaiian Airlines,1.828297582619136e+18
+280,Hebei Airlines,
+281,Helvetic Airways,
+282,Himalaya Airlines,
+283,HK Express,
+284,Hong Kong Airlines,
+285,Hongtu Airlines,
+286,HOP!,
+287,Hunnu Air,
+288,IBC Airways,
+289,Iberia,1.805726804913764e+18
+290,Iberia Express,2.0725693841200863e+18
+291,IBEX,
+292,Icelandair,1.8673973957839562e+18
+293,IndiGo,
+294,InselAir,
+295,interCaribbean,
+296,Interjet,2.0269293030367145e+18
+297,IrAero,
+298,Iran Aseman Airlines,
+299,IranAir,2.2351392686428733e+18
+300,Iraqi Airways,1.2501741616410598e+18
+301,Island Air [no longer operating],
+302,Israir,
+303,Izhavia,
+304,Jambojet,
+305,Japan Airlines (JAL),
+306,Jazeera Airways,
+307,JC Cambodia,
+308,Jeju Air,2.107005098567746e+18
+309,Jet Airways [no longer operating],
+310,Jet2.com,1.551657411881979e+18
+311,JetBlue,1.4958243245617106e+18
+312,JETGO,
+313,JetSmart,
+314,Jetstar Airways - Australia & New Zealand,
+315,Jetstar Asia Airways - Singapore,
+316,Jetstar Japan,
+317,Jetstar Pacific Airlines - Vietnam,
+318,JetSuiteX,
+319,"Jetways Airlines, Kenya [NOT Jet Airways of India]",
+320,Jiangxi Air,
+321,Jin Air,
+322,Jordan Aviation,
+323,Joy Air,
+324,Jubba Airways,
+325,Juneyao Airlines,
+326,Kalstar Aviation,
+327,Kam Air,
+328,Kan Airlines,
+329,Kenya Airways,1.6204610217735178e+18
+330,Kish Air,
+331,KLM Royal Dutch Airlines,2.2875640929983565e+18
+332,Korean Air,1.935141059477359e+18
+333,KrasAvia,
+334,Kulula,
+335,Kunming Airlines,
+336,Kuwait Airways,1.3890942425454054e+18
+337,La Compagnie,
+338,La Costena,
+339,LAM Mozambique,
+340,LAN Airlines (now LATAM Airlines),
+341,Lanmei Airlines,
+342,Lao Airlines,
+343,Lao Skyway,
+344,Laser Airlines,
+345,LATAM Airlines,
+346,Latin American Wings [no longer operating],
+347,Laudamotion,
+348,LCPeru,
+349,LEVEL,1.7709401469185684e+18
+350,LIAT,
+351,Libyan Airlines,
+352,Lion Air,
+353,Loganair,
+354,Longjiang - LJ Air,
+355,Loong Air,
+356,LOT Polish Airlines,2.2131073595881562e+18
+357,Lucky Air,
+358,Lufthansa,1.4620665231635492e+18
+359,Luxair,
+360,Magnicharters,
+361,Mahan Air,2.2321532109832858e+18
+362,Malaysia Airlines,1.4184575440017418e+18
+363,Maldivian,
+364,Malindo Air,
+365,Mandarin Airlines,
+366,Mango,1.7157056318972692e+18
+367,Mann Yadanarpon Airlines,
+368,Manta Air,
+369,Mauritania Airlines,
+370,Maya Island Air,1.629561056593138e+18
+371,Mayair,
+372,MIAT Mongolian Airlines,
+373,Middle East Airlines,
+374,Mistral Air,
+375,Mokulele Airlines,
+376,Monarch [no longer operating],
+377,Montenegro Airlines,
+378,Myanmar Airways International,
+379,Myanmar National Airlines,
+380,MyWay Airlines,
+381,Nam Air,
+382,Nature Air (no longer operating),
+383,Nauru Airlines,
+384,Neos,
+385,Nepal Airlines,
+386,NewGen Airways,
+387,NewLeaf [no longer operating - merged into Flair Airlines],
+388,Nextjet [no longer operating],
+389,Niki [no longer operating],
+390,Nile Air,
+391,Nok Air,
+392,NokScoot,
+393,Nordica,
+394,Nordstar Airlines,
+395,Nordwind Airlines,
+396,Norwegian,
+397,Nouvel Air Tunise,
+398,NOVOAIR,
+399,Okay Airways,
+400,Olympic Air [NOT the same as Olympus Airways],
+401,Oman Air,2.0422874136172262e+18
+402,Onur Air,
+403,OpenSkies [no longer operating],
+404,Orbest,
+405,Orient Thai Airlines,
+406,Pacific Coastal Airlines,
+407,Pakistan International Airlines,
+408,PAL Airlines (Canada),
+409,Pascan,
+410,Passaredo Linhas Aereas,
+411,PAWA Dominicana [no longer operating],
+412,Peach Aviation,
+413,Pegas Fly,
+414,Pegasus Airlines,
+415,Penobscot Island Air,
+416,People's Airline,
+417,Peruvian Airlines,
+418,Philippine Airlines (PAL),
+419,Plus Ultra Lineas Aereas,
+420,PNG Air,
+421,Pobeda,
+422,Porter Airlines,
+423,Precision Air,2.1189251091436585e+18
+424,Primera Air [no longer operating],
+425,Proflight Zambia,
+426,Qantas,
+427,Qatar Airways,1.5703394929298934e+18
+428,QAZAQ AIR,
+429,Qeshm Airlines,
+430,Qingdao Airlines,
+431,Ravn Alaska,
+432,REALtonga,
+433,Red Wings,
+434,Regent Airways,
+435,Regional Air,2.219198703613794e+18
+436,Regional Express Airlines,
+437,Rossiya Russian Airlines,
+438,Royal Air Maroc,1.8780938703317673e+18
+439,Royal Brunei Airlines,
+440,Royal Jordanian,
+441,Ruili Airlines,
+442,RusLine,
+443,RwandAir,1.4612649738013243e+18
+444,Ryanair,1.1898667541244303e+18
+445,S7 airlines,
+446,Safarilink,
+447,Safi Airways,2.2630862846224404e+18
+448,SalamAir,
+449,Samoa Airlines,
+450,San German Express,
+451,SANSA,
+452,Saratov/Ivolga [no longer operating],
+453,SAS,1.5110806554274368e+18
+454,SATA - Azores Airlines,
+455,SATENA Colombia,
+456,Saudia Airlines,
+457,SaudiGulf Airlines,
+458,SCAT Airlines,
+459,Scoot,
+460,Seaborne Airlines,1.4239423302639142e+18
+461,SereneAir,
+462,Sevenair/AeroVIP,
+463,Severstal Air Company,
+464,Shaheen Air International,
+465,Shandong Airlines,
+466,Shanghai Airlines,
+467,Sharp Airlines,
+468,Shenzhen Airlines,
+469,Shree,
+470,Sichuan Airlines,
+471,SilkAir,
+472,Silver Airways,
+473,Silverstone Air,
+474,Simrik Airlines,
+475,Singapore Airlines,1.8471053117149412e+18
+476,Sky Airline,2.1107493385566656e+18
+477,Sky Angkor Airlines,1.2208917770886305e+18
+478,Sky Express Airline,
+479,Sky Shuttle,
+480,Skyjet Airlines,
+481,Skymark Airlines,
+482,SkyUp,
+483,Skyway Airlines,
+484,SkyWork Airlines [no longer operating],
+485,Small Planet Airlines [no longer operating,
+486,Smartavia,
+487,SmartWings,
+488,Solaseed Air,
+489,Solomon Airlines,
+490,Somon Air,
+491,Sosa (Aerolineas Sosa),
+492,Sounds Air,
+493,South African Airways,
+494,Southern Airways Express,
+495,Southwest Airlines,1.41294910257896e+18
+496,SpiceJet,
+497,Spirit Airlines,
+498,Spring Airlines,
+499,Spring Airlines Japan,
+500,SprintAir (Polish airline),
+501,SriLankan Airlines,1.565427153410161e+18
+502,Sriwijaya Air,
+503,St Barth Commuter,
+504,Star Peru,
+505,Starbow [no longer operating],
+506,Starflyer,
+507,Sudan Airways,
+508,Sun Air Express,
+509,Sun Country Airlines,
+510,Sundair,
+511,SunExpress,
+512,Sunrise Airways,
+513,Sunwing Airlines,
+514,Suparna Airlines,
+515,Surinam Airways,2.1915134708880038e+18
+516,Swiss International Air Lines,
+517,Swoop,
+518,SyrianAir,
+519,T Way Airlines,
+520,TAAG Angola Airlines,1.3597142437274002e+18
+521,Taban Air,
+522,TACV Cabo Verde Airlines,
+523,TAG,
+524,Tailwind Airlines,
+525,Tajik Air,
+526,TAM Airlines Brazil,
+527,TAME Vuela Ecuador,
+528,TAP Air Portugal,
+529,TAR Aerolineas,1.9368937152512084e+18
+530,TAROM,
+531,Thai Airways,
+532,Thai Lion Air,
+533,THAI Smile Airways,
+534,Thai Vietjet,
+535,Thomas Cook Airlines (UK),
+536,Thomas Cook Airlines Belgium [no longer operating],
+537,Thomas Cook Airlines Scandinavia,
+538,Tianjin Airlines,
+539,Tiara Air Aruba,
+540,Tibet Airlines,
+541,tigerair australia,
+542,Tigerair Singapore [no longer operating],
+543,tigerair taiwan,
+544,Tradewind Aviation,
+545,Trans Air Congo (TAC),
+546,Trans Guyana,
+547,Trans Maldivian,
+548,Transavia,
+549,TransNusa,
+550,Trigana Air Service,
+551,Tropic Air Belize,
+552,Tropic Ocean Airways,2.213995859611892e+18
+553,Trujet,
+554,TUI Airlines Netherlands,
+555,TUI Airways (United Kingdom),
+556,TUI fly Belgium (formerly Jetairfly),
+557,TUIfly (Germany),
+558,Tunisair,1.4752239523499428e+18
+559,Turkish Airlines,1.2317416301390367e+18
+560,Turkmenistan Airlines,
+561,Tus Air,
+562,Twin Jet,
+563,Ukraine International Airlines,1.4269162399082301e+18
+564,Uni Air,
+565,United Airlines,2.2793144721624707e+18
+566,Ural Airlines,
+567,Urumqi Air,
+568,US-Bangla Airlines,
+569,Utair,
+570,Uzbekistan Airways,
+571,Vanilla Air,
+572,VASCO,
+573,Veca Airlines [no longer operating],
+574,Via Airlines,
+575,Vieques Air Link,
+576,VietJetAir,
+577,Vietnam Airlines,1.875614875622643e+18
+578,Vim Airlines [no longer operating],
+579,Virgin America (now Alaska Airlines),
+580,Virgin Atlantic Airways,1.7641798141625723e+18
+581,Virgin Australia,
+582,Vistara,
+583,Viva Aerobus,
+584,Viva Air (Colombia),
+585,Viva Air (Peru),
+586,VLM Airlines [no longer operating],
+587,Volaris,2.1754504782617367e+18
+588,Volotea,
+589,Vueling Airlines,1.2805283740124613e+18
+590,Wamos Air,1.361607891786997e+18
+591,Wantaniya Airways [no longer operating],
+592,Wasaya Airways,
+593,West Air,
+594,WestJet,2.1566654862462413e+18
+595,Wideroe,
+596,Winair,
+597,Windrose Air,
+598,Wingo,2.293217941425667e+18
+599,Wings Air,1.2628196306942784e+18
+600,Wizz Air,
+601,WOW air [no longer operating],
+602,Xiamen Airlines,
+603,XL Airways,
+604,Xpressair,
+605,Yakutia Air,
+606,Yamal Airlines,
+607,Yanair,
+608,Yemenia,
+609,Yeti Airlines,2.29187351383595e+18
+610,Zagros Airlines,
+611,9 Air,
