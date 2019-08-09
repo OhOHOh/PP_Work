@@ -1,6 +1,10 @@
 import pandas as pd
 import os
 
+'''
+将所有公司的评论都整合起来, 上下拼接形成一个大的评论数据集!
+目前数据集在Github目录的Innovation Lab文件夹下, 文件名为 reviews_data_tripadv.csv
+'''
 
 def get_files(path):
     files_list = []
